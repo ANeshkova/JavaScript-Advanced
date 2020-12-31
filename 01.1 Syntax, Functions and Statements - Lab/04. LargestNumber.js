@@ -1,0 +1,21 @@
+function largestNumber(num1, num2, num3) {
+
+    let max = Number.MIN_SAFE_INTEGER;
+
+    if (num1 > max) {
+        max = num1;
+    }
+
+    if (num2 > max) {
+        max = num2;
+    }
+
+    if (num3 > max) {
+        max = num3;
+    }
+
+    console.log(`The largest number is ${max}.`);
+}
+
+largestNumber(5, -3, 16);
+//largestNumber(-3, -5, -22.5);
